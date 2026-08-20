@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio de Jérémie Fandos — Développeur Fullstack en formation. Node.js, Express, JavaScript, Java, Spring, Angular." />
+
+  <!-- Open Graph (aperçu LinkedIn / réseaux) -->
+  <meta property="og:title" content="Jérémie Fandos — Développeur Fullstack" />
+  <meta property="og:description" content="Portfolio de Jérémie Fandos — Développeur Fullstack en formation." />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:image" content="assets/img/og-image.png" /> -->
+
+  <title>Jérémie Fandos — Développeur Fullstack</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="#top" class="nav-logo label">Jérémie Fandos</a>
+
+      <!-- Menu desktop -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link label">À propos</a></li>
+        <li><a href="#skills" class="nav-link label">Compétences</a></li>
+        <li><a href="#projects" class="nav-link label">Projets</a></li>
+        <li><a href="#parcours" class="nav-link label">Parcours</a></li>
+        <li><a href="#contact" class="nav-link label">Contact</a></li>
+      </ul>
+
+      <!-- Burger mobile -->
+      <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about" class="label">À propos</a></li>
+        <li><a href="#skills" class="label">Compétences</a></li>
+        <li><a href="#projects" class="label">Projets</a></li>
+        <li><a href="#parcours" class="label">Parcours</a></li>
+        <li><a href="#contact" class="label">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO
+    ══════════════════════════════════════ -->
+    <section class="section-hero" id="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <p class="label hero-eyebrow">Développeur Fullstack · En formation</p>
+          <h1 class="hero-name">Jérémie Fandos</h1>
+          <p class="hero-desc">
+            Je construis des applications web fullstack avec Node.js
+            et JavaScript vanilla. Je travaille actuellement Java,
+            JPA et les bases de données relationnelles,
+            en route vers Spring et Angular.
+          </p>
+          <div class="hero-cta">
+            <a href="https://github.com/khora-san" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+            <a href="#contact" class="btn btn-ghost">Contact</a>
+          </div>
+        </div>
+
+        <!-- Photo placeholder — à remplacer par <img> quand disponible -->
+        <div class="hero-photo" aria-hidden="true">
+          <span class="label">photo</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         À PROPOS
+    ══════════════════════════════════════ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <p class="label section-label">À propos</p>
+        <h2 id="about-title">Qui suis-je</h2>
+        <p>
+          <!-- À compléter -->
+          Texte de présentation à rédiger.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         COMPÉTENCES
+    ══════════════════════════════════════ -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="label section-label">Compétences</p>
+        <h2 id="skills-title">Stack & outils</h2>
+        <div class="skills-grid">
+
+          <div class="skills-group">
+            <p class="label skills-group-title">Front-end</p>
+            <ul class="tag-list" role="list">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag accent-tag">JavaScript</li>
+              <li class="tag">Bootstrap</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <p class="label skills-group-title">Back-end</p>
+            <ul class="tag-list" role="list">
+              <li class="tag accent-tag">Node.js</li>
+              <li class="tag accent-tag">Express</li>
+              <li class="tag">Java</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <p class="label skills-group-title">Outils</p>
+            <ul class="tag-list" role="list">
+              <li class="tag">Git</li>
+              <li class="tag">GitHub</li>
+              <li class="tag">IntelliJ IDEA</li>
+              <li class="tag">Maven</li>
+              <li class="tag">draw.io</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PROJETS
+    ══════════════════════════════════════ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <p class="label section-label">Projets</p>
+        <h2 id="projects-title">Ce que je construis</h2>
+
+        <div class="projects-grid">
+
+          <!-- Carte projet #1 — Quiz -->
+          <article class="project-card">
+            <!-- <img src="assets/img/quiz-preview.png" alt="Aperçu du Quiz Web" class="project-img" /> -->
+            <div class="project-body">
+              <h3 class="project-title">Quiz Web — HTML / CSS / JS / Node</h3>
+              <p class="project-desc">
+                Application QCM fullstack pour réviser les notions web.
+                Architecture multicouche Node/Express, JS vanilla côté client.
+                En cours de développement.
+              </p>
+              <ul class="tag-list" role="list">
+                <li class="tag">Node.js</li>
+                <li class="tag">Express</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/khora-san" class="btn btn-ghost btn-sm" target="_blank"
+                  rel="noopener">GitHub →</a>
+                <!-- <a href="#" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Démo →</a> -->
+              </div>
+            </div>
+          </article>
+
+          <!-- Prochaines cartes ici -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PARCOURS
+    ══════════════════════════════════════ -->
+    <section class="section section-alt" id="parcours" aria-labelledby="parcours-title">
+      <div class="container">
+        <p class="label section-label">Parcours</p>
+        <h2 id="parcours-title">Formation</h2>
+
+        <ol class="timeline" role="list">
+
+          <li class="timeline-item">
+            <span class="timeline-date label">2024 – en cours</span>
+            <h3 class="timeline-title">Formation Développeur Fullstack</h3>
+            <p class="timeline-desc muted">
+              Stack Java / Spring / Angular / Node.js / Express.
+              Architecture multicouche, SQL, UML, DevSecOps.
+            </p>
+          </li>
+
+          <!-- Ajouter d'autres étapes ici -->
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="label section-label">Contact</p>
+        <h2 id="contact-title">Discutons</h2>
+        <p>
+          Disponible pour des opportunités, collaborations ou simplement échanger.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ton@email.com" class="btn btn-primary">M'écrire</a>
+          <a href="https://github.com/khora-san" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://fr.linkedin.com/in/jeremiefandos" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="muted">
+        <span class="mono">© 2026 Jérémie Fandos</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
